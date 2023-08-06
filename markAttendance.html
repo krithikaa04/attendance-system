@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href = "./menu.css">
+    <link rel="stylesheet" href = "./markAttendance.css">
+</head>
+<body id="body-absentees">
+    <header class="header">
+        <img src="./img/logo.png" alt="Logo">
+        <div class="title">
+            <h1 class="txt">BE/BTech Honors Attendance System</h1>
+        </div>
+          
+        <div class="professor-name">
+            <span id="professor-name"></span>
+            <a href="login2.html" id="logout-button">Logout</a>
+        </div>
+    </header>
+    <header class="header-buttons">
+        <nav class="nav">
+            <div class="container-menu">
+                <ul>
+                    <li><a href="home.html" class="current">Home</a></li>
+                    <li><a class="attendance" href="attendance.html">Attendance</a></li>
+                    <li><a href="report.html">Report</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<div id="container-sheet">
+    <div class = "input-container">
+        <label class ="input-labels" id="label1">Select Date</label>
+        <div id = "input-date">
+            <input type="date" id="date" name="date"
+                value="2023-06-19"
+                min="2023-06-19" max="2023-12-31">
+        </div>
+        <label class ="input-labels" id="label2">From</label>
+        <div id = 'from'>
+            <!--<label>From</label>-->
+        <input type="number" min="1" max="10" value="1" id="from_">
+        </div>
+        <label class ="input-labels" id="label3">To</label>
+        <div id = 'to'>
+            <!--<label>From</label>-->
+            <input  type="number" min="1" max="10" value="1" id="to_">
+        </div>
+    </div>
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100 ver1 m-b-110">
+                <div class="table100-head">
+                    <table>
+                        <thead>
+                        <tr class="row100 head">
+                            <th class ="cell100 column1">No</th>
+                            <th class="cell100 column2">Roll No</th>
+                            <th class="cell100 column3">Name</th>
+                            <th class="cell100 column4">Mark Absentees</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table100-body js-pscroll">
+                    <table>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="submit-btn">
+    <button onclick="confirmFunction()" type = "submit" >SUBMIT</button>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Attendance Marked Successfully</h3>
+        </div>
+
+    </div>
+</div>
+<script src="./markAttendance.js"></script>
+
+</body>
+</html>

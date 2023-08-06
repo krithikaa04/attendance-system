@@ -1,0 +1,155 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'candara';
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.header {
+    background-color:#1261A0;/* Blue color for the header */
+    color: #fff; /* Text color to white for better visibility */
+    padding: 20px;
+    /*text-align: left;*/
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+
+  }
+  nav{
+    margin-top: 10px;
+  }
+#professor-name{
+    font-weight: bold;
+    float: right;
+}
+#course-codes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh; /* Set a height to center the content vertically */
+    margin-top: 5px;
+    margin-bottom: auto;
+  }
+#course-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    max-height: 400px; /* Set a fixed height for the container */
+    max-width: 700px;
+    
+  }
+
+  #course-list li {
+    display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 2px;
+  background-color: #f2effd;
+  border: 2px  solid #f2effe;
+  box-sizing: border-box;
+  width: 400px;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 10px
+  }
+  .codes{
+    font-weight: bold;
+    margin-left: auto;
+    font-size: 25px;
+
+  }
+  .Reportbtn {
+    padding: 10px 20px;
+    margin-left: 2px; /* Add left margin to create space between the buttons and course code */
+  border: none;
+  border-radius: 5px;
+  background-color: #1261A0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16.5px;
+  display: block;
+
+  }
+  .Attendancebtn {
+    padding: 10px 20px;
+  margin-left: auto; /* Move the Attendance button towards the right by 5 pixels */
+  border: none;
+  border-radius: 5px;
+  background-color: #1261A0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16.5px;
+  display: block;
+  
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-top: 20px; /* Add margin to create space between the header and the container */
+  }
+  
+  /* Style the input field for entering the year */
+  .year-input {
+    margin-bottom: 20px; /* Add margin to create space between the input field and the course codes container */
+    display: flex;
+    align-items: center;
+  }
+  
+  .year-input label {
+    margin-right: 10px; /* Add some spacing between the label and the input field */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .year-input input[type="number"] {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80px;
+    font-weight: bold;
+
+  }
+  .year-input button[type="submit"] {
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1261A0; /* Green background color */
+    color: white; /* White text color */
+    cursor: pointer;
+    margin-left: 20px;
+    /*transition: background-color 0.3s; /* Add transition effect for smooth color change */
+  }
+  button:hover{
+    background-color: cornflowerblue;
+  }
+  h3{
+    font-size: 20px;
+    margin-right: 175px;
+  }
+  select.custom-select{
+    background: #fff;
+    color: #000;
+    padding: 0 10px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: 180px;
+    margin-top: -30px;
+}
+select.custom-select option{
+	color: #000;
+    padding: 0 10px;
+}
+  
